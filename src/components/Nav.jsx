@@ -9,7 +9,7 @@ import BotonNav from "./buttons"
  * @since 05/03/2026
 */
 
-function Nav(){
+export function Nav(){
     return(
         <nav className="navMain">
             <ul className="listaBotones">
@@ -21,4 +21,19 @@ function Nav(){
     );
 }
 
-export default Nav;
+export function NavAdmin(){
+    return(
+        <nav className="navAdmin">
+            <ul className="listaBotones">
+                <BotonNav name="Inicio"></BotonNav>
+                <BotonNav name="Perfil"></BotonNav>
+                <BotonNav name="Seguidores"></BotonNav>
+                <BotonNav name="Eliminar"></BotonNav>
+                <BotonNav name="Consultar"></BotonNav>
+                <BotonNav name="Editar"></BotonNav>
+            </ul>
+        </nav>
+    )
+}
+
+
