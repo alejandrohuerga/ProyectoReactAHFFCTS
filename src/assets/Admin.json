@@ -1,0 +1,14 @@
+{
+    "usuario":[
+        {
+            "tipo": "admin",
+            "nombre": "admin1",
+            "password": "admin123",
+            "permisos": {
+                "eliminar": true,
+                "consultar": true,
+                "editar": true
+            }
+        }
+    ]
+}

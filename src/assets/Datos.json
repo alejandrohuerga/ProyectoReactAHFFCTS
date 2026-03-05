@@ -1,0 +1,36 @@
+{
+  "usuarios": [
+    {
+      "tipo": "admin",
+      "nombre": "admin1",
+      "password": "admin123",
+      "permisos": {
+        "eliminar": true,
+        "consultar": true,
+        "editar": true
+      }
+    },
+    {
+      "tipo": "normal",
+      "nombre": "usuario1",
+      "password": "user123",
+      "seguidores": ["seguidor1", "seguidor2", "seguidor3"]
+    },
+    {
+      "tipo": "normal",
+      "nombre": "usuario2",
+      "password": "user456",
+      "seguidores": []
+    },
+    {
+      "tipo": "admin",
+      "nombre": "admin2",
+      "password": "admin456",
+      "permisos": {
+        "eliminar": false,
+        "consultar": true,
+        "editar": false
+      }
+    }
+  ]
+}
