@@ -14,7 +14,7 @@ function BotonNav(props){
     }
 
     return(
-        <button onClick={handleClick} id={"botonNav"+props.name}> {props.name} </button>
+        <button className="btn btn-secondary btn-lg" onClick={handleClick} id={"botonNav"+props.name}> {props.name} </button>
     )
 }
 
