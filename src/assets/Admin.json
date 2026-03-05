@@ -8,7 +8,21 @@
                 "eliminar": true,
                 "consultar": true,
                 "editar": true
-            }
+            },
+            "menu":[
+                {
+                    "texto":"Seguidos"
+                },
+                {
+                    "texto":"Seguidores"
+                },
+                {
+                    "texto":"Imagen"
+                },
+                {
+                    "texto":"Me gusta"
+                }   
+            ]
         }
     ]
 }

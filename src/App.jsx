@@ -18,7 +18,10 @@ function App(props) {
     return(
         <div className="App">
             <Header></Header>
-            <main className="container-fluid d-flex justify-content-center align-items-center vh-100">
+            <div className="filtros">
+                
+            </div>
+            <main className="container-fluid d-flex justify-content-center align-items-center">
                 <TablaUsuarios />
             </main>
         </div>

@@ -1,6 +1,6 @@
-import {Nav,NavAdmin} from "./Nav";
-
+import { Nav, NavAdmin } from "./Nav";
 import DatosUsuario from "../assets/Admin.json";
+import BotonNav from "./buttons";
 
 /**
  * Función con el componente nav. 
@@ -12,20 +12,20 @@ import DatosUsuario from "../assets/Admin.json";
  * @since 05/03/2026
  */
 
-function Header(){
-    return (
-      <header className="d-flex flex-column justify-content-center align-items-center bg-info text-white">
-        <h1 className="text-black">Aplicación React</h1>
-        <h2 className="text-black">Alejandro De la Huerga</h2>
+function Header() {
+  const usuario = DatosUsuario.usuario[0];
 
-        {DatosUsuario.usuario.map((usuario, index) => (
-            usuario.tipo === "admin" ? (
-              <NavAdmin key={index} />
-            ) : (
-              <Nav key={index} />
-            )
+  return (
+    <header className="d-flex flex-column justify-content-center align-items-center bg-info text-white p-3">
+      <h1 className="text-black">Aplicación React</h1>
+      <h2 className="text-black">Alejandro De la Huerga</h2>
+
+      <nav className="d-flex gap-2 mt-3">
+        {usuario.menu.map((item, index) => (
+          <BotonNav key={index} name={item.texto} />
         ))}
-      </header>
+      </nav>
+    </header>
   );
 }
 
