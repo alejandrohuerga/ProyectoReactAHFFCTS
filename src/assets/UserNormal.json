@@ -1,14 +1,28 @@
 {
     "usuario":[
         {
-            "tipo": "usuario",
+            "tipo": "admin",
             "nombre": "admin1",
             "password": "admin123",
             "permisos": {
-            "eliminar": true,
-            "consultar": true,
-            "editar": true
-      }
+                "eliminar": true,
+                "consultar": true,
+                "editar": true
+            },
+            "menu":[
+                {
+                    "texto":"Eliminar"
+                },
+                {
+                    "texto":"Editar"
+                },
+                {
+                    "texto":"Consultar"
+                },
+                {
+                    "texto":"Panel"
+                }   
+            ]
         }
     ]
 }

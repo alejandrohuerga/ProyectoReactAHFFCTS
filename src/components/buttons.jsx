@@ -8,9 +8,15 @@
  */
 
 function BotonNav(props){
+
+    const handleClick = () =>{
+        alert(`Has pulsado el boton ${props.name}`);
+    }
+
     return(
-        <button className="btn btn-outline-dark m-3" id={"botonNav"+props.name}> {props.name} </button>
+        <button onClick={handleClick} id={"botonNav"+props.name}> {props.name} </button>
     )
 }
-    
+
+
 export default BotonNav;
