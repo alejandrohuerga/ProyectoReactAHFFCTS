@@ -18,5 +18,4 @@ function BotonNav(props){
     )
 }
 
-
 export default BotonNav;
