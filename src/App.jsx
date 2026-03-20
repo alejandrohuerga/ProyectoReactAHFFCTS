@@ -5,7 +5,7 @@
 
 import Header from "./components/Header";
 import TablaUsuarios from "./components/tables";
-
+import List from "./components/list";
 
 /**
  * Función principal la cual se va a mostrar en el index.html 
@@ -23,6 +23,7 @@ function App(props) {
                 <TablaUsuarios />
             </main>
         </div>
+
     );
 }
 
